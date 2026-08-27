@@ -3,10 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Campus Path - Find the right college for you</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello there</h1>
-</body>
+    <header>
+    <div class="logo">CampusPath</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Colleges</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+    </nav>
+    </header>
+
+    <section class="hero">
+
+        <h1>Find the right college for you</h1>
+
+        <p>
+            Compare colleges, read student reviews and apply online.
+        </p>
+
+
+        <a href="login.html">
+        <button>
+            Create free account
+        </button>
+        </a>
+
+    </section>
+
+
+    <section class="search-section">
+
+        <div class="search-card">
+
+            <h2>Search colleges</h2>
+
+            <p>
+                Choose what you are looking for and press search.
+            </p>
+
+            <div class="search-fields">
+
+                <div class="field">
+                    <label>Course</label>
+
+                    <select>
+                        <option>Engineering</option>
+                        <option>Medical</option>
+                        <option>Management</option>
+                        <option>Law</option>
+                    </select>
+                </div>
+
+
+                <div class="field">
+                    <label>City</label>
+
+                    <select>
+                        <option>Bengaluru</option>
+                        <option>Delhi</option>
+                        <option>Mumbai</option>
+                        <option>Hyderabad</option>
+                    </select>
+                </div>
+
+
+                <div class="field">
+                    <label>Minimum rating</label>
+
+                    <select>
+                        <option>3 stars and above</option>
+                        <option>4 stars and above</option>
+                        <option>5 stars</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            
+            <div class="college-name">
+
+                <label>College name (optional)</label>
+
+                <input type="text" placeholder="Enter college name">
+
+            </div>
+            
+            <button class="search-button">
+    Search colleges
+</button>
+
+        </div>
+
+    </section>
+
+
+<section class="location-section">
+
+    <h2>Browse by location</h2>
+
+    <p>Click a city to see the colleges there.</p>
+
+    <div class="city-list">
+
+        <a href="#">Bengaluru - 184 colleges</a>
+        <a href="#">Delhi - 212 colleges</a>
+        <a href="#">Mumbai - 167 colleges</a>
+        <a href="#">Pune - 143 colleges</a>
+        <a href="#">Chennai - 128 colleges</a>
+        <a href="#">Hyderabad - 119 colleges</a>
+        <a href="#">Kolkata - 96 colleges</a>
+        <a href="#">Jaipur - 74 colleges</a>
+
+    </div>
+
+</section>
+
+
+<section class="featured-section">
+
+    <h2>Featured colleges</h2>
+
+    <p>Colleges that students are looking at this month.</p>
+
+</section>
+
+
+<section class="ranking-section">
+
+    <table class="college-table">
+
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>College name</th>
+                <th>City</th>
+                <th>Rating</th>
+                <th>Reviews</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Northfield Institute of Technology</td>
+                <td>Bengaluru</td>
+                <td>★★★★★ &nbsp;4.8</td>
+                <td>3,412</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Meridian School of Business</td>
+                <td>Mumbai</td>
+                <td>★★★★☆ &nbsp;4.6</td>
+                <td>2,190</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Ashcroft Medical College</td>
+                <td>Delhi</td>
+                <td>★★★★☆ &nbsp;4.5</td>
+                <td>1,860</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Whitmore University</td>
+                <td>Pune</td>
+                <td>★★★★☆ &nbsp;4.3</td>
+                <td>1,205</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Eastgate Law College</td>
+                <td>Hyderabad</td>
+                <td>★★★★☆ &nbsp;4.2</td>
+                <td>880</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<section class="reviews-section">
+
+    <h2>What students say</h2>
+
+    <p class="section-description">
+        Reviews from students who joined through CampusPath.
+    </p>
+
+
+    <div class="reviews-container">
+
+    
+
+        <div class="review-card">
+
+            <h3>Rhea Kulkarni</h3>
+
+            <p class="student-info">
+                B. Tech student, Northfield Institute
+            </p>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="review-text">
+                I compared nine engineering colleges in one weekend.
+                The reviews helped me pick the right one.
+            </p>
+
+        </div>
+
+
+    
+
+        <div class="review-card">
+
+            <h3>Sanya Kapoor</h3>
+
+            <p class="student-info">
+                MBBS student, Ashcroft Medical College
+            </p>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="review-text">
+                The dashboard showed me which applications were still
+                pending, so I never missed a deadline.
+            </p>
+
+        </div>
+
+
+        <!-- Review 3 -->
+
+        <div class="review-card">
+
+            <h3>Aman Verma</h3>
+
+            <p class="student-info">
+                MBA student, Meridian School of Business
+            </p>
+
+            <div class="stars">
+                ★★★★☆
+            </div>
+
+            <p class="review-text">
+                Comparing the fees side by side was very useful.
+                I applied to three colleges in one week.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <h2>CampusPath</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Colleges</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Login</a>
+    </nav>
+
+    <p>
+        Copyright 2026 CampusPath. A student project made with HTML and CSS.
+    </p>
+
+</footer>
+
+</body> 
 </html>
