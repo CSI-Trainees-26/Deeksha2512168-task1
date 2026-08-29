@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f4;
+    color: #111;
+}
+
+
+.main-header {
+    height: 80px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    border-bottom: 1px solid #d8e0dc;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #155b4b;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 18px;
+}
+
+.main-nav a:hover {
+    color: #155b4b;
+}
+
+
+
+.college-list-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 60px 20px 100px;
+}
+
+.college-list-container h1 {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    color: #123c34;
+
+    margin-bottom: 12px;
+}
+
+.intro {
+    color: #607d78;
+
+    font-size: 18px;
+
+    margin-bottom: 55px;
+}
+
+
+.college-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 70px;
+
+    row-gap: 50px;
+}
+
+
+.college-group h2 {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    color: #155b4b;
+
+    margin-bottom: 25px;
+}
+
+.college-group a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #155b4b;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 8px;
+}
+
+.college-group a:hover {
+    text-decoration: underline;
+
+    color: #0d4438;
+}
+
+
+
+.footer {
+    background-color: #10241f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+.footer h2 {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    margin-bottom: 30px;
+}
+
+.footer nav {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom: 25px;
+}
+
+.footer nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+}
+
+.footer nav a:hover {
+    color: #b8ddd3;
+}
+
+.footer p {
+    color: #8da39d;
+
+    font-size: 15px;
+}
+
+
+@media (max-width: 800px) {
+
+    .college-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        column-gap: 40px;
+    }
+
+    .main-header {
+        padding: 0 30px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .college-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        gap: 12px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+
+}
+
+/* Green College List heading */
+
+.college-list-heading {
+    background-color: #176653;
+    color: white;
+    padding: 70px 12%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.college-list-heading h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    color: white;
+    margin: 0 0 20px 0;
+}
+
+.college-list-heading p {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+    margin: 0;
+}

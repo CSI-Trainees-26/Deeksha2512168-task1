@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f5;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 84px;
+    background-color: #116353;
+}
+
+.navbar-container {
+    max-width: 1375px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    color: white;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #8ce0d0;
+}
+
+.nav-links {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    padding: 10px 0;
+
+    position: relative;
+}
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: white;
+}
+
+
+.login-btn {
+    width: 116px;
+    height: 52px;
+
+    margin-left: 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: white;
+    color: #116353;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.hero {
+    background-color: #116353;
+    color: white;
+
+    padding: 61px 0 52px;
+}
+
+.hero-container {
+    max-width: 1375px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #d9f4ee;
+}
+
+
+.courses-section {
+    background-color: #f4f6f5;
+    padding: 62px 0 80px;
+}
+
+.courses-container {
+    max-width: 1375px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+
+.course-card {
+    min-height: 421px;
+
+    background-color: white;
+
+    border: 1px solid #d7e2df;
+    border-radius: 15px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.course-icon {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background-color: #e6f3f0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+}
+
+.course-icon i {
+    font-size: 29px;
+    color: #116353;
+}
+
+
+
+.course-card h2 {
+    font-size: 24px;
+    line-height: 1.55;
+
+    color: #075f50;
+
+    min-height: 75px;
+
+    margin-bottom: 17px;
+}
+
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    margin-bottom: 22px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    color: #5c6563;
+    font-size: 16px;
+}
+
+.info-row i {
+    color: #116353;
+    font-size: 19px;
+    width: 21px;
+}
+
+.view-course {
+    width: 100%;
+    height: 62px;
+
+    margin-top: auto;
+
+    border: 2px solid #116353;
+    border-radius: 7px;
+
+    background-color: white;
+    color: #075f50;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.view-course:hover {
+    background-color: #116353;
+    color: white;
+}
+
+
+@media (max-width: 1100px) {
+
+    .courses-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .navbar-container {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .courses-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
+
+.courses-section {
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    gap: 30px;
+}
+
+.course-card {
+    background: white;
+    border: 1px solid #dce5e2;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.course-card h2 {
+    color: #006456;
+}
+
+.course-card button {
+    width: 100%;
+    height: 60px;
+    border: 2px solid #006456;
+    background: white;
+    color: #006456;
+    border-radius: 7px;
+}
+
+.footer {
+    background-color: #0d211b;
+
+    text-align: center;
+
+    padding: 65px 20px 45px 20px;
+
+    color: white;
+}
+
+
+.footer h2 {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    margin: 0 0 30px 0;
+}
+
+
+.footer nav {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom: 25px;
+}
+
+
+.footer nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+}
+
+
+.footer > p {
+    color: #6d827b;
+
+    font-size: 16px;
+
+    margin: 0;
+}
