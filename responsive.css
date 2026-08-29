@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 800px) {
+
+
+    .main-header,
+    header {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 30px !important;
+        gap: 15px;
+    }
+
+    .main-nav,
+    header nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .main-nav a,
+    header nav a {
+        font-size: 15px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 330px;
+        padding: 60px 25px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .search-card,
+    .location-section,
+    .featured-section,
+    .ranking-section,
+    .reviews-section {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .search-card {
+        padding: 40px 25px;
+    }
+
+    .search-fields {
+        flex-wrap: wrap;
+    }
+
+    .field {
+        min-width: 45%;
+    }
+
+    .college-name {
+        width: 50%;
+    }
+
+    .reviews-container {
+        flex-wrap: wrap;
+    }
+
+    .review-card {
+        min-width: 45%;
+    }
+
+    .ranking-section {
+        overflow-x: auto;
+    }
+
+    .college-table {
+        min-width: 750px;
+    }
+    .login-hero {
+        height: auto;
+        min-height: 280px;
+        padding: 50px 25px;
+    }
+
+    .login-hero h1 {
+        font-size: 36px;
+    }
+
+    .login-hero p {
+        font-size: 20px;
+    }
+
+    .login-box {
+        width: 90%;
+        max-width: 660px;
+    }
+    .college-hero {
+        padding: 50px 30px;
+    }
+
+    .college-hero h1 {
+        font-size: 34px;
+    }
+
+    .college-info {
+        font-size: 18px;
+    }
+
+    .college-container {
+        padding: 25px 30px 70px;
+    }
+
+    .college-image {
+        height: 300px;
+    }
+
+    .college-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .college-list-container {
+        width: 90%;
+        padding: 50px 0 80px;
+    }
+
+    .college-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+
+    .college-list-heading {
+        padding: 55px 8%;
+    }
+
+    .college-list-heading h1 {
+        font-size: 42px;
+    }
+
+    .college-list-heading p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+
+
+    .main-header,
+    header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px 15px !important;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .main-nav,
+    header nav {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .main-nav a,
+    header nav a {
+        font-size: 14px;
+    }
+
+
+    .hero {
+        min-height: 300px;
+        padding: 45px 20px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    .search-section {
+        padding: 35px 0;
+    }
+
+    .search-card {
+        width: 94%;
+        padding: 30px 20px;
+    }
+
+    .search-card h2,
+    .location-section h2,
+    .featured-section h2,
+    .reviews-section h2 {
+        font-size: 25px;
+    }
+
+    .search-card > p,
+    .location-section p,
+    .featured-section p {
+        font-size: 16px;
+    }
+
+    .search-fields {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .field {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .college-name {
+        width: 100%;
+    }
+
+    .location-section,
+    .featured-section,
+    .ranking-section,
+    .reviews-section {
+        width: 94%;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .city-list {
+        gap: 8px;
+    }
+
+    .city-list a {
+        font-size: 14px;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+    }
+
+    .review-card {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .ranking-section {
+        overflow-x: auto;
+    }
+
+    .college-table {
+        min-width: 700px;
+        font-size: 14px;
+    }
+
+
+    .login-hero {
+        min-height: 250px;
+        padding: 40px 20px;
+    }
+
+    .login-hero h1 {
+        font-size: 30px;
+    }
+
+    .login-hero p {
+        font-size: 17px;
+    }
+
+    .login-section {
+        padding: 35px 0;
+    }
+
+    .login-box {
+        width: 94%;
+        padding: 30px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 27px;
+    }
+
+    .login-description {
+        font-size: 16px;
+    }
+
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+        font-size: 16px;
+    }
+
+    .college-hero {
+        padding: 40px 20px;
+    }
+
+    .college-hero h1 {
+        font-size: 28px;
+    }
+
+    .college-info {
+        font-size: 16px;
+    }
+
+    .college-ranking {
+        font-size: 16px;
+    }
+
+    .college-container {
+        padding: 20px 15px 60px;
+    }
+
+    .college-image {
+        height: 220px;
+        margin-bottom: 30px;
+    }
+
+    .college-card {
+        padding: 22px 18px;
+    }
+
+    .college-card h2 {
+        font-size: 24px;
+    }
+
+    .college-card h3 {
+        font-size: 19px;
+    }
+
+    .college-card p {
+        font-size: 16px;
+    }
+
+    .course-item,
+    .fact,
+    .ranking-row {
+        font-size: 16px;
+    }
+
+    .map-placeholder {
+        height: 280px;
+    }
+
+
+
+    .college-list-container {
+        width: 94%;
+        padding: 40px 0 60px;
+    }
+
+    .college-list-container h1 {
+        font-size: 30px;
+    }
+
+    .intro {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .college-grid {
+        grid-template-columns: 1fr;
+        row-gap: 35px;
+    }
+
+    .college-group h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .college-group a {
+        font-size: 16px;
+    }
+
+    .college-list-heading {
+        padding: 45px 20px;
+    }
+
+    .college-list-heading h1 {
+        font-size: 32px;
+    }
+
+    .college-list-heading p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .footer {
+        padding: 45px 15px 35px;
+    }
+
+    .footer nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer nav a {
+        font-size: 15px;
+    }
+
+}
