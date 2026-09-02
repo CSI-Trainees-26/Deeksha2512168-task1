@@ -13,7 +13,7 @@ body {
 .navbar {
     width: 100%;
     height: 84px;
-    background-color: #116353;
+    background-color: white;
 }
 
 .navbar-container {
@@ -28,13 +28,13 @@ body {
 
 
 .logo {
-    color: white;
+    color: #176b54;;
     font-size: 29px;
     font-weight: 700;
 }
 
 .logo span {
-    color: #8ce0d0;
+    color: #176b54;;
 }
 
 .nav-links {
@@ -46,7 +46,7 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
 
     font-size: 18px;
@@ -163,8 +163,6 @@ body {
     color: #116353;
 }
 
-
-
 .course-card h2 {
     font-size: 24px;
     line-height: 1.55;
@@ -175,7 +173,6 @@ body {
 
     margin-bottom: 17px;
 }
-
 
 .course-info {
     display: flex;
@@ -298,7 +295,6 @@ body {
     color: white;
 }
 
-
 .footer h2 {
     font-family: Georgia, serif;
 
@@ -306,7 +302,6 @@ body {
 
     margin: 0 0 30px 0;
 }
-
 
 .footer nav {
     display: flex;

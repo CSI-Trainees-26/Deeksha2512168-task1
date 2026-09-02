@@ -11,7 +11,7 @@ body {
 
 .main-header {
 
-    height: 80px;
+    height: 78px;
 
     background-color: white;
 
@@ -21,10 +21,9 @@ body {
 
     justify-content: space-between;
 
-    padding: 0 6%;
+    padding: 0 255px;
 
-    box-sizing: border-box;
-
+  
 }
 
 
@@ -32,11 +31,11 @@ body {
 
     font-family: Georgia, serif;
 
-    font-size: 30px;
+    font-size: 28px;
 
     font-weight: bold;
 
-    color: #176b54;
+    color: #155b4b;
 
 }
 
@@ -47,7 +46,7 @@ body {
 
     align-items: center;
 
-    gap: 32px;
+    gap: 30px;
 
 }
 
